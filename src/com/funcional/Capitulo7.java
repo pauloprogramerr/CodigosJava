@@ -156,12 +156,24 @@ public class Capitulo7 {
 
         /** Queremos o usuario com maior quantidade de pontos, podemos usar
          * o método max para tal, que recebe um comparator
+         * Se lista for vazia, não haverá usuario para ser retornado. Por isso,
+         * o resultado é um optional
          */
 
         Optional<Usuario> max = usuarios
                 .stream()
                 .max(Comparator.comparingInt(Usuario::getPontos));
 
-        /** Página 54 */
+        /** Você deve verificar se há ou não um usuário presente nesse resultado
+         *  usando os métodos que vimos. pode ser simples get, podemos receber um null
+         *  ou algo mais rebuscado com o orElse ou ifPresent
+         *  se quiser o nome do usuário com maior número de pontos, pode mapear
+         *  (trasnformar) esse resultado.
+         */
+        Optional<String> maxNome = usuarios
+                .stream()
+                .max(Comparator.comparingInt(Usuario::getPontos))
+                .map(Usuario::getNome);
+
     }
 }
