@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4db49ff1-ef8a-414f-9a35-eb96127610be" name="Changes" comment="Adicionando os arquivos Operações de curto circuito e Fibonacci">
+      <change beforePath="$PROJECT_DIR$/src/com/funcional/PraticandoComJavaNioFileFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/PraticandoComJavaNioFileFiles.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EuYzbQOFQroT6R7wbOjMlUcDZp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.PraticandoComJavaNioFileFiles">
+    <configuration name="Capitulo6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.Capitulo6" />
+      <module name="CodigosJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.funcional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Capitulo7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.Capitulo7" />
+      <module name="CodigosJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.funcional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperacoesDeReducao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.OperacoesDeReducao" />
+      <module name="CodigosJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.funcional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PraticandoComJavaNioFileFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.PraticandoComJavaNioFileFiles" />
+      <module name="CodigosJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.funcional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestandoPredicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.TestandoPredicates" />
+      <module name="CodigosJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.funcional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PraticandoComJavaNioFileFiles" />
+        <item itemvalue="Application.TestandoPredicates" />
+        <item itemvalue="Application.OperacoesDeReducao" />
+        <item itemvalue="Application.Capitulo7" />
+        <item itemvalue="Application.Capitulo6" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4db49ff1-ef8a-414f-9a35-eb96127610be" name="Changes" comment="" />
+      <created>1663447272389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663447272389</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Estudos de programação funcional com java 8, testando nova API do java">
+      <created>1663603144068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663603144069</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Atualização do arquivo sobre Streams e Optional">
+      <created>1663637891808</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663637891808</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ordenando um Stream">
+      <created>1663695923630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663695923630</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adicionando os arquivos Operações de redução, Testando Predicates e atualizando o arquivo Capitulo8">
+      <created>1663805373703</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805373703</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Adicionando os arquivos Operações de curto circuito e Fibonacci">
+      <created>1663867714126</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663867714126</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adicionando os arquivos Operações de curto circuito e Fibonacci">
+      <created>1663897747998</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663897747998</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Estudos de programação funcional com java 8, testando nova API do java" />
+    <MESSAGE value="Atualização do arquivo sobre Streams e Optional" />
+    <MESSAGE value="Ordenando um Stream" />
+    <MESSAGE value="Adicionando os arquivos Operações de redução, Testando Predicates e atualizando o arquivo Capitulo8" />
+    <MESSAGE value="Adicionando os arquivos Operações de curto circuito e Fibonacci" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando os arquivos Operações de curto circuito e Fibonacci" />
+  </component>
+</project>
