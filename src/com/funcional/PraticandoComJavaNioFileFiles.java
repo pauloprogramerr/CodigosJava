@@ -35,5 +35,7 @@ public class PraticandoComJavaNioFileFiles {
                 .filter(p -> p.toString().endsWith(".java"))
                 .map(p -> lines(p))
                 .forEach(System.out::println);
+
+
     }
 }
