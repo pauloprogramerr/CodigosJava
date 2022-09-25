@@ -1,4 +1,4 @@
-package com.funcional.files;
+package com.funcional.datas;
 
 import java.time.*;
 import java.util.Calendar;
@@ -93,6 +93,11 @@ public class NovaAPIDatas {
         /** Existe tmbém outros comportamentos essencias, como saber se
          * alguma medida de tempo acontece antes, depois ou ao mesmo tempo que
          * outra. Para  esses casos utilizamos os métodos is.
+         *
+         * Utilizar o método equals não causaria o efeito esperado, a sobre
+         * escrita neste método na classe ZonedDateTime espera que o offset
+         * entre as duas datas sejam o mesmo. Para este casos podemos utilizar o
+         * método isEqual exatamente como feito no código abaixo
          */
 
         LocalDate hj = LocalDate.now();
@@ -102,7 +107,38 @@ public class NovaAPIDatas {
         System.out.println(hj.isAfter(amanha));
         System.out.println(hj.isEqual(amanha));
 
+        ZonedDateTime tokyo = ZonedDateTime.of(
+                2011, 5, 2, 10, 30, 0, 0,
+                ZoneId.of("Asia/Tokyo"));
+
+        ZonedDateTime saoPaulo = ZonedDateTime
+                .of(2011, 5 , 2, 10, 30, 0,0,ZoneId.of("America/Sao_Paulo"));
+        System.out.println(tokyo.isEqual(saoPaulo));
+
+        /** Para que o resultado do método isEqual seja true, precisamos acertar
+         * a diferenca de tempo entre duas datas. Uma forma de fazer isso seria
+         * adicionar 12 horas de diferença na instância de tokyo
+          */
+
+        ZonedDateTime tokyo1 = ZonedDateTime
+                .of(2011, 5, 2, 10,30,0,0,ZoneId.of("Asia/Tokyo"));
+
+        ZonedDateTime saoPaulo1 = ZonedDateTime
+                .of(2011, 5, 2, 10,30,0,0,ZoneId.of("America/Sao_Paulo"));
+        tokyo1 = tokyo1.plusHours(12);
+        System.out.println(tokyo1.isEqual(saoPaulo1));
 
 
+        // Obeter o dia do mês atual
+        System.out.println("Hoje é dia: " + MonthDay.now().getDayOfMonth());
+
+        // podemos pegar o YearMonth de determinada data
+        YearMonth ym = YearMonth.from(date);
+        System.out.println(ym.getMonth() +" "+ ym.getYear());
+
+        /** A vantagem de trabalhar apenas com ano e mês é poder agrupar
+         * dados de uma forma mais direta. Com o calendar, precisamos utilizar
+         * uma data completa e ignorar dia e hora, soluções incompletas
+          */
     }
 }

@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4db49ff1-ef8a-414f-9a35-eb96127610be" name="Changes" comment="Adicionando os arquivos Operações de curto circuito e Fibonacci">
-      <change afterPath="$PROJECT_DIR$/src/com/funcional/files/ColetoresGerandoMapas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/funcional/files/FlatMap.java" afterDir="false" />
+    <list default="true" id="4db49ff1-ef8a-414f-9a35-eb96127610be" name="Changes" comment="Adicionando API  que trabalham com datas">
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/datas/DiferencaParaJodaTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/datas/EnumsNoLugarDeConstantes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/loja/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/loja/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/loja/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/loja/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/Capitulo6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/Capitulo6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/PraticandoComJavaNioFileFiles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/Suppliers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/Validador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/funcional/Capitulo6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/Capitulo6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/funcional/PraticandoComJavaNioFileFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/files/PraticandoComJavaNioFileFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/funcional/Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/interfaces/Suppliers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/funcional/Validador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/interfaces/Validador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/funcional/files/NovaAPIDatas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/datas/NovaAPIDatas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ColetoresGerandoMapas">
+  <component name="RunManager" selected="Application.EnumsNoLugarDeConstantes">
     <configuration name="ColetoresGerandoMapas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.funcional.files.ColetoresGerandoMapas" />
       <module name="CodigosJava" />
@@ -64,8 +61,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlatMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.funcional.files.FlatMap" />
+    <configuration name="EnumsNoLugarDeConstantes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.datas.EnumsNoLugarDeConstantes" />
+      <module name="CodigosJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.funcional.datas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupingByPartitioningBy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.files.GroupingByPartitioningBy" />
       <module name="CodigosJava" />
       <extension name="coverage">
         <pattern>
@@ -77,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OperacoesDeReducao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.funcional.OperacoesDeReducao" />
+    <configuration name="OperacaoesNaoDeterministicasOrderedStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.files.OperacaoesNaoDeterministicasOrderedStreams" />
       <module name="CodigosJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.funcional.*" />
+          <option name="PATTERN" value="com.funcional.files.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,25 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PraticandoComJavaNioFileFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.funcional.PraticandoComJavaNioFileFiles" />
+    <configuration name="PipelineEmParalelo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.files.PipelineEmParalelo" />
       <module name="CodigosJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.funcional.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestandoPredicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.funcional.TestandoPredicates" />
-      <module name="CodigosJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.funcional.*" />
+          <option name="PATTERN" value="com.funcional.files.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EnumsNoLugarDeConstantes" />
+        <item itemvalue="Application.OperacaoesNaoDeterministicasOrderedStreams" />
+        <item itemvalue="Application.PipelineEmParalelo" />
+        <item itemvalue="Application.GroupingByPartitioningBy" />
         <item itemvalue="Application.ColetoresGerandoMapas" />
-        <item itemvalue="Application.FlatMap" />
-        <item itemvalue="Application.PraticandoComJavaNioFileFiles" />
-        <item itemvalue="Application.TestandoPredicates" />
-        <item itemvalue="Application.OperacoesDeReducao" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664020259313</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adicionando classes  que trabalham com arquivos e listagem de arquivos">
+      <created>1664116866240</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664116866240</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adicionando API  que trabalham com datas">
+      <created>1664128633433</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664128633433</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +234,8 @@
     <MESSAGE value="Ordenando um Stream" />
     <MESSAGE value="Adicionando os arquivos Operações de redução, Testando Predicates e atualizando o arquivo Capitulo8" />
     <MESSAGE value="Adicionando os arquivos Operações de curto circuito e Fibonacci" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando os arquivos Operações de curto circuito e Fibonacci" />
+    <MESSAGE value="Adicionando classes  que trabalham com arquivos e listagem de arquivos" />
+    <MESSAGE value="Adicionando API  que trabalham com datas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando API  que trabalham com datas" />
   </component>
 </project>
