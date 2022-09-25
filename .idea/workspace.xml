@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4db49ff1-ef8a-414f-9a35-eb96127610be" name="Changes" comment="Adicionando os arquivos Operações de curto circuito e Fibonacci">
-      <change beforePath="$PROJECT_DIR$/src/com/funcional/PraticandoComJavaNioFileFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/PraticandoComJavaNioFileFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/files/ColetoresGerandoMapas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/files/FlatMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/Capitulo6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/Capitulo6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/PraticandoComJavaNioFileFiles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/Suppliers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodigosJava/com/funcional/Validador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/funcional/Capitulo6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/Capitulo6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/funcional/PraticandoComJavaNioFileFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/files/PraticandoComJavaNioFileFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/funcional/Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/interfaces/Suppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/funcional/Validador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/interfaces/Validador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +50,13 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PraticandoComJavaNioFileFiles">
-    <configuration name="Capitulo6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.funcional.Capitulo6" />
+  <component name="RunManager" selected="Application.ColetoresGerandoMapas">
+    <configuration name="ColetoresGerandoMapas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.files.ColetoresGerandoMapas" />
       <module name="CodigosJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.funcional.*" />
+          <option name="PATTERN" value="com.funcional.files.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -54,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Capitulo7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.funcional.Capitulo7" />
+    <configuration name="FlatMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.files.FlatMap" />
       <module name="CodigosJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.funcional.*" />
+          <option name="PATTERN" value="com.funcional.files.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ColetoresGerandoMapas" />
+        <item itemvalue="Application.FlatMap" />
         <item itemvalue="Application.PraticandoComJavaNioFileFiles" />
         <item itemvalue="Application.TestandoPredicates" />
         <item itemvalue="Application.OperacoesDeReducao" />
-        <item itemvalue="Application.Capitulo7" />
-        <item itemvalue="Application.Capitulo6" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663897747998</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adicionando os arquivos Operações de curto circuito e Fibonacci">
+      <created>1664020206330</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664020206330</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adicionando os arquivos Operações de curto circuito e Fibonacci">
+      <created>1664020259313</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664020259313</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

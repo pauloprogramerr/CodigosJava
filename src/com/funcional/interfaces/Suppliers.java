@@ -1,4 +1,4 @@
-package com.funcional;
+package com.funcional.interfaces;
 
 @FunctionalInterface
 public interface Suppliers<T> {
