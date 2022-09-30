@@ -279,6 +279,40 @@ public class Main { // Página 100
 
         /** Qual é o nosso Cliente mais especial 108
          *
+         *  Qual seria a estratégia para obter o desejadp Map<Customer, BigDecimal>?
+         *  Será a mesma que a da redução anterior, apenas mudando a operação
+         *  Começaermos com BigDecimal.ZERO e para cada Payment, faremos BigDecimal::add
+         *  da soma dos preços de seus produtos. Por esse motivo uma redução apaarece
+         *  dentro de um reducing
+         */
+
+        Map<Customer, BigDecimal> totalValuePerCustomer = payments.stream()
+                .collect(Collectors.groupingBy(Payment::getCustomer,
+                        Collectors.reducing(BigDecimal.ZERO,
+                                p -> p.getProducts().stream()
+                                        .map(Product::getPrice)
+                                        .reduce(BigDecimal.ZERO, BigDecimal::add),
+                                        BigDecimal::add)));
+
+        /** O código está no mínimo muito acumulado. Cremos ja termos passado do
+         * limite da legibilidade. vamos quebrar essa reduçãi, criando uma variável temporária
+         * responsavel por mapear um Payment para soma de todos os preços de
+         * seus produtos
+          */
+
+     Function<Payment, BigDecimal> paymentToTotal =
+     p -> p.getProducts().stream()
+             .map(Product::getPrice)
+             .reduce(BigDecimal.ZERO, BigDecimal::add);
+        /** Com isto podemos utilizar essa Function no reducing
+         */
+        Map<Customer, BigDecimal> totalValuePerCustomer2 = payments.stream()
+                .collect(Collectors.groupingBy(Payment::getCustomer,
+                        Collectors.reducing(BigDecimal.ZERO,
+                                paymentToTotal, BigDecimal::add)));
+
+        /** Págian 109
+         *
          */
     }
 }
