@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4db49ff1-ef8a-414f-9a35-eb96127610be" name="Changes" comment="Adicionando API  que trabalham com datas">
-      <change afterPath="$PROJECT_DIR$/src/com/funcional/datas/DiferencaParaJodaTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/funcional/datas/EnumsNoLugarDeConstantes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/funcional/loja/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/funcional/loja/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/funcional/loja/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/funcional/loja/Product.java" afterDir="false" />
+    <list default="true" id="4db49ff1-ef8a-414f-9a35-eb96127610be" name="Changes" comment="atualizando API  que trabalham com datas, e adicionando loja virtual">
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/loja/Subscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/funcional/music/bach.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/funcional/files/NovaAPIDatas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/datas/NovaAPIDatas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/funcional/loja/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/loja/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,20 +43,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.EnumsNoLugarDeConstantes">
-    <configuration name="ColetoresGerandoMapas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.funcional.files.ColetoresGerandoMapas" />
-      <module name="CodigosJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.funcional.files.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="EnumsNoLugarDeConstantes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.funcional.datas.EnumsNoLugarDeConstantes" />
       <module name="CodigosJava" />
@@ -80,6 +63,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.funcional.files.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.funcional.loja.Main" />
+      <module name="CodigosJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.funcional.loja.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.EnumsNoLugarDeConstantes" />
         <item itemvalue="Application.OperacaoesNaoDeterministicasOrderedStreams" />
         <item itemvalue="Application.PipelineEmParalelo" />
         <item itemvalue="Application.GroupingByPartitioningBy" />
-        <item itemvalue="Application.ColetoresGerandoMapas" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +198,35 @@
       <option name="project" value="LOCAL" />
       <updated>1664128633433</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="atualizando API  que trabalham com datas, e adicionando loja virtual">
+      <created>1664139471372</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664139471372</updated>
+    </task>
+    <task id="LOCAL-00012" summary="atualizando API  que trabalham com datas, e adicionando loja virtual">
+      <created>1664213443950</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664213443950</updated>
+    </task>
+    <task id="LOCAL-00013" summary="atualizando API  que trabalham com datas, e adicionando loja virtual">
+      <created>1664498763876</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664498763876</updated>
+    </task>
+    <task id="LOCAL-00014" summary="atualizando API  que trabalham com datas, e adicionando loja virtual">
+      <created>1664500076713</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664500076713</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,6 +260,7 @@
     <MESSAGE value="Adicionando os arquivos Operações de curto circuito e Fibonacci" />
     <MESSAGE value="Adicionando classes  que trabalham com arquivos e listagem de arquivos" />
     <MESSAGE value="Adicionando API  que trabalham com datas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando API  que trabalham com datas" />
+    <MESSAGE value="atualizando API  que trabalham com datas, e adicionando loja virtual" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualizando API  que trabalham com datas, e adicionando loja virtual" />
   </component>
 </project>

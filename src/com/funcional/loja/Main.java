@@ -3,6 +3,7 @@ package com.funcional.loja;
 import java.math.BigDecimal;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
+import java.time.YearMonth;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -300,8 +301,8 @@ public class Main { // Página 100
          * seus produtos
           */
 
-     Function<Payment, BigDecimal> paymentToTotal =
-     p -> p.getProducts().stream()
+         Function<Payment, BigDecimal> paymentToTotal =
+         p -> p.getProducts().stream()
              .map(Product::getPrice)
              .reduce(BigDecimal.ZERO, BigDecimal::add);
         /** Com isto podemos utilizar essa Function no reducing
@@ -311,8 +312,68 @@ public class Main { // Página 100
                         Collectors.reducing(BigDecimal.ZERO,
                                 paymentToTotal, BigDecimal::add)));
 
-        /** Págian 109
+        /** Novamente usrge um forte indício de que deveria haver um método
+         * getTotalAmount em Payment, que calculasse todo esse valor.
+         * Nesse caso, poderíamos fazer um simples reducing(BigDecimal.ZERO,
+         * PaymentgetTotalAmount, BigDecimaladd) Ao mesmo tempo, este está sendo
+         * um excelente exercício de manipulação de coleções e relacionamentos.
          *
          */
+        totalValuePerCustomer.entrySet().stream()
+                .sorted(Comparator.comparing(Map.Entry::getValue))
+                .forEach(System.out::println);
+
+        /** Relatórios com datas
+         *  É muito simples separarmos os pagamentos por data, usando um
+         *  grouping(Payment::getDate).
+         *  Há um perigo: o LocalDateTime vai agrupar os pagamentos até pelos
+         *  milissegundos. Não é o que queremos. Podemos agrupar LocalDate, usando
+         *  um groupingBy(p -> p.getDate().toLocalDate()), ou em um intervalo
+         *  ainda maior, como por ano e mês. Para isto usamos o YearMonth
+         */
+
+        Map<YearMonth, List<Payment>> paymentPerMonth = payments
+                .stream()
+                .collect(Collectors.groupingBy(
+                        p -> YearMonth.from(p.getDate())));
+        paymentPerMonth.entrySet()
+                .stream()
+                .forEach(System.out::println);
+
+        /** E se quisermos saber, também por mês, quanto doi faturado na loja?
+         * Basta agrupar com o mesmo critério e usar a redução qye conhecemos
+         * saomanod todos os preços de todos os produtos de todos os pagamentos
+         */
+        Map<YearMonth, BigDecimal> paymetsvaluePerMonth = payments
+                .stream()
+                .collect(Collectors.groupingBy(p -> YearMonth.from(p.getDate()),
+                        Collectors.reducing(BigDecimal.ZERO,
+                                p -> p.getProducts()
+                                        .stream()
+                                        .map(Product::getPrice)
+                                        .reduce(BigDecimal.ZERO,
+                                                BigDecimal::add),
+                                BigDecimal::add)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
