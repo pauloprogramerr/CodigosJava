@@ -18,6 +18,27 @@ public class Subscription {
         this.customer = customer;
     }
 
+    public Subscription(BigDecimal monthlyFee, LocalDateTime begin,
+                        LocalDateTime end, Customer customer) {
+        this.monthlyFee = monthlyFee;
+        this.begin = begin;
+        this.end = Optional.of(end);
+        this.customer = customer;
+    }
 
+    public BigDecimal getMonthlyFee() {
+        return monthlyFee;
+    }
 
+    public LocalDateTime getBegin() {
+        return begin;
+    }
+
+    public Optional<LocalDateTime> getEnd() {
+        return end;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
 }
