@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4db49ff1-ef8a-414f-9a35-eb96127610be" name="Changes" comment="atualizando API  que trabalham com datas, e adicionando loja virtual">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/funcional/loja/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/loja/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/funcional/loja/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/funcional/loja/Subscription.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -75,7 +73,7 @@
       <module name="CodigosJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.funcional.loja.*" />
+          <option name="PATTERN" value="com.funcional.interfaces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -233,7 +231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664635889428</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="atualizando API  que trabalham com datas, e adicionando loja virtual">
+      <created>1664636262053</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1664636262053</updated>
+    </task>
+    <task id="LOCAL-00017" summary="atualizando API  que trabalham com datas, e adicionando loja virtual">
+      <created>1664641117275</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1664641117275</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
