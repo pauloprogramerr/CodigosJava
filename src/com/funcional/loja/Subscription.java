@@ -2,6 +2,7 @@ package com.funcional.loja;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.Optional;
 
 public class Subscription {
@@ -40,5 +41,11 @@ public class Subscription {
 
     public Customer getCustomer() {
         return customer;
+    }
+    public BigDecimal getTotalPaid(){
+        return getMonthlyFee()
+                .multiply(new BigDecimal(ChronoUnit.MONTHS
+                        .between(getBegin(),
+                                getEnd().orElse(LocalDateTime.now()))));
     }
 }

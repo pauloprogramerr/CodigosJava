@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.YearMonth;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -354,5 +355,50 @@ public class Main { // Página 100
                                         .reduce(BigDecimal.ZERO,
                                                 BigDecimal::add),
                                 BigDecimal::add)));
+
+
+
+        BigDecimal monthfyLee = new BigDecimal("90.90");
+        Subscription s1 =
+                new Subscription(monthfyLee,
+                        yesterday.minusMonths(5), paulo);
+        Subscription s2 = new Subscription(monthfyLee,
+                yesterday.minusMonths(8), today.minusMonths(1),rodrigo);
+        Subscription s3 = new Subscription(monthfyLee,
+                yesterday.minusMonths(5), today.minusMonths(2),
+                adriano);
+        List<Subscription> subscriptions = Arrays.asList(s1, s2,s3);
+
+        /** Como calcular quantos meses foram pagos através daquela assinatura
+         * Basta usar o que conhecemos da API de java.time. Mas depende do caso
+         * Se a assinatura ainda estiver ativa, calculamos o intervalo de tempo entre
+         * begin e a data de hoje
+         */
+
+        long meses = ChronoUnit.MONTHS
+                .between(s1.getBegin(), LocalDateTime.now());
+        /** E se a assinatura terminou? Em vez de enchermos nosso código de
+         * ifs, tiramos proveito do Optional
+         */
+        long meses1 = ChronoUnit.MONTHS
+                .between(s1.getBegin(),
+                        s1.getEnd().orElse(LocalDateTime.now()));
+
+        /** Para calcular o valor daquela assimatura, basta multiplicar
+         * esse número de meses pelo custo mensal
+          */
+        BigDecimal total2 = s1.getMonthlyFee()
+                .multiply(new BigDecimal(ChronoUnit.MONTHS
+                        .between(s1.getBegin(),
+                                s1.getEnd().orElse(LocalDateTime.now()))));
+
+
+        /** Depois de adicionado o método getTotalPaid(), dada uma lista
+         * de subscription, fica fácil somar todo o total pago.
+          */
+        BigDecimal totalPaid = subscriptions
+                .stream()
+                .map(Subscription::getTotalPaid)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
 }
